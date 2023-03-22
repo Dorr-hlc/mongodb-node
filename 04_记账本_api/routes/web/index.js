@@ -4,22 +4,14 @@
  * @Date: 2023-03-21 22:48:32
  * @Author:
  * @LastEditors: houliucun
- * @LastEditTime: 2023-03-22 23:19:55
+ * @LastEditTime: 2023-03-22 23:54:51
  * @RevisionHistory:
  */
 var express = require("express");
 var router = express.Router();
-//导入 lowdb
-const low = require("lowdb");
-const FileSync = require("lowdb/adapters/FileSync");
-const adapter = new FileSync(__dirname + "/../data/db.json");
-//获取 db 对象
-const db = low(adapter);
-//导入 shortid
-const shortid = require("shortid");
 // 导入日期转化包
 const moment = require("moment");
-const AccountModel = require("../models/accountModel");
+const AccountModel = require("../../models/AccountModel");
 // 测试
 // console.log(moment("2023-03-21"));
 
